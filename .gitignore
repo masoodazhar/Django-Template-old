@@ -1,0 +1,30 @@
+# Custom gitignore file for Docker and Django
+
+# Docker environment
+.env
+
+# Django environments
+linux-venv/
+windows-env/
+
+# Pycache
+__pycache__/
+*.pyc
+
+# SQLite
+*.sqlite3
+
+# Custom gitignore file for kisy
+
+# Audios
+*.ogg
+*.mp3
+
+# Images
+*.jpg
+*.png
+*.gif
+*.svg
+
+# Fonts
+*.ttf
