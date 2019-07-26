@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'esite.home',
     
     'corsheaders',
+    'django_filters',
 
     'django.contrib.admin',
     'django.contrib.auth',
