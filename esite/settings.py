@@ -33,6 +33,8 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'esite.core',
     'esite.home',
+    
+    'corsheaders',
 
     'django.contrib.admin',
     'django.contrib.auth',
@@ -45,12 +47,17 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+# If True, the whitelist will not be used and all origins will be accepted. Defaults to False.
+# See https://pypi.org/project/django-cors-headers/
+CORS_ORIGIN_ALLOW_ALL = True
 
 ROOT_URLCONF = 'esite.urls'
 
