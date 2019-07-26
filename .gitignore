@@ -4,7 +4,7 @@
 
 # Django environments
 linux-venv/
-windows-env/
+windows-venv/
 
 # Pycache
 __pycache__/
