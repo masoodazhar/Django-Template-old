@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'esite.core',
+    'esite.home',
 
     'django.contrib.admin',
     'django.contrib.auth',
