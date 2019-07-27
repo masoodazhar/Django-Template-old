@@ -21,3 +21,6 @@ from .base import *
 ALLOWED_HOSTS = []
 ALLOWED_HOSTS = os.getenv('DJANGO_ALLOWED_HOSTS', '*').split(';')
 
+
+# SPDX-License-Identifier: (EUPL-1.2)
+# Copyright © 2019 Werbeagentur Christian Aichner

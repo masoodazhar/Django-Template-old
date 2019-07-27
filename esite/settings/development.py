@@ -28,3 +28,6 @@ SECRET_KEY = 'ct*z11t*ns876z)!f5f3h1byn7pp1ma5i!9*oo!=dmtmnrvzcn'
 # See https://docs.djangoproject.com/en/2.2/ref/settings/#email-backend
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
+
+# SPDX-License-Identifier: (EUPL-1.2)
+# Copyright © 2019 Werbeagentur Christian Aichner
