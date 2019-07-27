@@ -138,8 +138,38 @@ USE_L10N = True
 USE_TZ = True
 
 
+# ManifestStaticFilesStorage is recommended in production, to prevent outdated
+# Javascript / CSS assets being served from cache
+# (e.g. after a Wagtail upgrade).
+# See https://docs.djangoproject.com/en/2.2/ref/settings/#staticfiles-storage
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
+
+
 # Static files (CSS, JavaScript, Images)
 # See https://docs.djangoproject.com/en/2.2/howto/static-files/
+STATICFILES_FINDERS = [
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+]
 
+
+# This setting defines the additional locations the staticfiles app will
+# traverse if the FileSystemFinder finder is enabled.
+# See https://docs.djangoproject.com/en/2.2/ref/settings/#staticfiles-dirs
+STATICFILES_DIRS = [
+    os.path.join(PROJECT_DIR, 'static'),
+]
+
+
+# The absolute path to the directory where collectstatic will collect static
+# files for deployment.
+# See https://docs.djangoproject.com/en/2.2/ref/settings/#static-root
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
+
+
+# Absolute filesystem path to the directory that will hold user-uploaded files.
+# See https://docs.djangoproject.com/en/2.2/ref/settings/#media-root
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
 
