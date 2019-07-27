@@ -14,4 +14,7 @@ https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 from .base import *
 
 
+# IMPORTANT: Set this to a real hostname when using this in production!
+# See https://docs.djangoproject.com/en/1.10/ref/settings/#allowed-hosts
 ALLOWED_HOSTS = []
+
