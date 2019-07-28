@@ -5,7 +5,7 @@ import sys
 
 
 def main():
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'esite.settings')
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "esite.settings.development")
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
@@ -19,3 +19,6 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+# SPDX-License-Identifier: (EUPL-1.2)
+# Copyright © 2019 Werbeagentur Christian Aichner
