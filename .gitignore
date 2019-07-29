@@ -14,7 +14,7 @@ __pycache__/
 # SQLite
 *.sqlite3
 
-# Custom gitignore file
+# Custom gitignore file for esite
 
 # Audios
 *.ogg
